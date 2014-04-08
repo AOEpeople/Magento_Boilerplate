@@ -1,1 +1,1 @@
-@shell if [ ! -f $PROJECT/app/etc/local.xml.PROTECT ] ; then cp $MODULE/local.xml.template $PROJECT/app/etc/local.xml && echo `date +%s` > $PROJECT/app/etc/local.xml.PROTECT && echo "Copied local.xml"; fi
+@shell if [ ! -f $PROJECT/app/etc/local.xml.PROTECT ] ; then cp $MODULE/app/etc/local.xml.template $PROJECT/app/etc/local.xml && echo `date +%s` > $PROJECT/app/etc/local.xml.PROTECT && echo "Copied local.xml"; fi

@@ -7,14 +7,17 @@ SOURCE_DIR=`dirname "${ABSPATH}"`
 cd ${SOURCE_DIR} 
 
 # Run composer
-./tools/composer.phar install || (echo "Composer failed"; exit 1)
+tools/composer.phar install || (echo "Composer failed"; exit 1)
 
 # Run modman
-./tools/modman deploy-all --force || (echo "Modman failed"; exit 1)
+tools/modman deploy-all --force || (echo "Modman failed"; exit 1)
 
 # Run EnvSettingsTool
-cd htdocs
-./tools/apply.php devbox ../Configuration/settings.csv || (echo "EnvSettingsTool failed"; exit 1)
+cd htdocs || (echo "Changing directory to 'htdocs/' failed"; exit 1)
+../tools/apply.php devbox ../Configuration/settings.csv || (echo "EnvSettingsTool failed"; exit 1)
 
+echo
+echo "------------------------"
 echo "Installation successful!"
-
+echo "------------------------"
+echo
