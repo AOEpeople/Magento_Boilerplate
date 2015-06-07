@@ -1,31 +1,15 @@
 {
-    "minimum-stability":"dev",
-    "require":{
-		"aoepeople/composer-installers": "*",
-		"fbrnc/aoe_scheduler": "*",
-		"magento/ce": "1.8.1.0",
-		"aoemedia/envsettingstool": "*"
-    },
-	"repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.firegento.com"
-        },
-		{
-			"type": "package",
-			"package": {
-				"name": "magento/ce",
-				"version": "1.8.1.0",
-				"type": "magento-source",
-				"dist": {
-					"url": "http://www.magentocommerce.com/downloads/assets/1.8.1.0/magento-1.8.1.0.tar.gz",
-					"type": "tar"
-				}
-			}
-		}
-	],
-    "config": {
-        "bin-dir": "tools"
-    }
+  "name": "magento/boilerplate",
+  "minimum-stability": "dev",
+  "require": {
+    "aoepeople/composer-installers": "*",
+    "aoepeople/envsettingstool": "*",
+    "aoepeople/magento-deployscripts": "*",
+    "openmage/magento-lts": "1.9.1.*",
+    "aoepeople/aoe_templatehints": "*",
+    "aoepeople/aoe_scheduler": "*"
+  },
+  "config": {
+    "bin-dir": "tools"
+  }
 }
-

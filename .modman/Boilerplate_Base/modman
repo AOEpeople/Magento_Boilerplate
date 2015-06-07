@@ -1,0 +1,3 @@
+# only copy the file if the corresponding .PROTECT is not there to avoid file from being overwritten on every deployment
+@shell if [ ! -f $PROJECT/app/etc/local.xml.PROTECT ] ; then cp $MODULE/app/etc/local.xml.template $PROJECT/app/etc/local.xml && echo `date +%s` > $PROJECT/app/etc/local.xml.PROTECT && echo "Copied local.xml"; fi
+@shell if [ ! -f $PROJECT/.htaccess.PROTECT ] ; then cp $MODULE/.htaccess.template $PROJECT/.htaccess && echo `date +%s` > $PROJECT/.htaccess.PROTECT && echo "Copied .htaccess"; fi

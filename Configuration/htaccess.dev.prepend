@@ -1,0 +1,13 @@
+### START: DEV ###
+
+# This content lives in Configuration/htaccess.auth.protection and will be prepended to .htaccess
+# by the EnvSettingsTool's Est_Handler_PrependFileContent handler
+# Don't do any changes in the .htaccess file, but do them in the original file where this snippet is taken from
+
+SetEnv MAGE_IS_DEVELOPER_MODE "true"
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+php_flag log_errors on
+
+### END: DEV ###

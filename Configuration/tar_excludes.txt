@@ -1,0 +1,10 @@
+.git*
+./htdocs/includes
+./htdocs/downloader
+./htdocs/pkginfo
+./htdocs/LICENSE*
+./htdocs/RELEASE_NOTES.txt
+./htdocs/phpunit.xml*
+./htdocs/*.sample
+./htdocs/var
+./htdocs/media
