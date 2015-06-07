@@ -1,4 +1,6 @@
-composer.lock
-vendor/
-htdocs/
-tools/*
+/composer.lock
+/vendor/
+/htdocs/
+/tools/*
+/.modman/aoe_scheduler/
+/.modman/aoe_templatehints/
