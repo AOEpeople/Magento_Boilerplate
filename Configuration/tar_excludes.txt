@@ -1,5 +1,6 @@
 .git*
 ./htdocs/includes
+./htdocs/dev
 ./htdocs/downloader
 ./htdocs/pkginfo
 ./htdocs/LICENSE*
